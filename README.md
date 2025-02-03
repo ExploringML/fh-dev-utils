@@ -119,7 +119,7 @@ INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 ```
 
-## TailwindCSS Setup
+### TailwindCSS Setup
 
 The `serve_dev(tw=True)` function runs the TailwindCSS CLI to watch for
 class name changes but you need to setup your FastHTML to be Tailwind
