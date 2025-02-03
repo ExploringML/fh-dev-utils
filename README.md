@@ -7,27 +7,54 @@
 
 Here’s a brief outline of the benefits of using `fh-dev-utils`.
 
-1.  Super-easy to dynamically build Tailwind styles!
+1.  Super-easy to build Tailwind styles dynamically.
 2.  Compatible with [TailwindCSS
     v4](https://tailwindcss.com/blog/tailwindcss-v4).
-3.  Cach buster to bypass browser styles during development.
+3.  Cache buster to always load latest styles during development.
 4.  Run a Jupyter notebook server alongside your FastHTML app.
 5.  Database browser to easily view/manage your apps db tables and
     records.
-6.  TailwindCSS intellisense for a great developer experience.
+6.  TailwindCSS intellisense for a great developer experience!
 
-It’s recommended by the authors of TailwindCSS uses a build step to
-compile styles for published websites, rather than just add the CDN
-version to the site header.
+Tailwind officially advises to use a build step to compile styles rather
+than adding the static CSS file via a CDN. A huge benefit of a build
+step is [enabling intellisense](#tailwind-intellisense) support.
 
-And if you like using Tailwind for your app styling then make sure you
-[enable intellisense](#tailwind-intellisense). This is only available if
-you dynamically build your styles. Being able to see inline color
-information, all available tailwind classes, and what CSS a class will
-be converted into is a game-changer!
+**Using intellisense to view inline color information at a glance, see a
+list of all available Tailwind classes, and hover over any Tailwind
+class to view compiled CSS, is a game-changer!**
 
 A complete list of the benefits of compiling TailwindCSS styles can be
 found [here](#tailwindcss-dynamic-build).
+
+## Quick Start
+
+Install the `fh-dev-utils` package from PyPi.
+
+``` sh
+$ pip install fh-dev-utils
+```
+
+Git clone one of the example projects.
+
+``` sh
+$ git clone https://github.com/ExploringML/fh-dev-utils-examples.git
+```
+
+For the TailwindCSS and Jupyter notebook demo navigate into the
+`tw-jupyter-example` folder and run the FastHTML application.
+
+``` sh
+$ cd tw-jupyter-example
+$ python main.py
+```
+
+Or to run the database example.
+
+``` sh
+$ cd db-example
+$ python main.py
+```
 
 ## Introduction
 
