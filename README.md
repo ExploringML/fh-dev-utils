@@ -35,7 +35,7 @@ Install the `fh-dev-utils` package from PyPi.
 $ pip install fh-dev-utils
 ```
 
-Git clone one of the example projects.
+Git clone the FastHTML example projects repository.
 
 ``` sh
 $ git clone https://github.com/ExploringML/fh-dev-utils-examples.git
