@@ -33,21 +33,15 @@ found [here](#tailwindcss-dynamic-build).
 
 The `fh-dev-utils` package helps during the devlopment of FastHTML
 applications by adding support for live TailwindCSS build, a Jupyter
-notebook server, and an SQLite viewer/manager via the
-[`serve_dev()`](https://ExploringML.github.io/fh-dev-utils/serve_dev.html#serve_dev)
+notebook server, and an SQLite viewer/manager via the `serve_dev()`
 function.
 
-There is also a
-[`cache_buster()`](https://ExploringML.github.io/fh-dev-utils/serve_dev.html#cache_buster)
-function available to help prevent caching of CSS styles during
-development.
+There is also a `cache_buster()` function available to help prevent
+caching of CSS styles during development.
 
 See [here](https://exploringml.github.io/fh-dev-utils/serve_dev.html)
-for the full definition of
-[`serve_dev()`](https://ExploringML.github.io/fh-dev-utils/serve_dev.html#serve_dev)
-and
-[`cache_buster()`](https://ExploringML.github.io/fh-dev-utils/serve_dev.html#cache_buster)
-plus all available parameters.
+for the full definition of `serve_dev()` and `cache_buster()` plus all
+available parameters.
 
 ## Usage
 
@@ -74,24 +68,19 @@ def get(): return Div(P('Hello World!'))
 serve_dev()
 ```
 
-Replace the default `serve()` function with
-[`serve_dev()`](https://ExploringML.github.io/fh-dev-utils/serve_dev.html#serve_dev).
-This performs the same functionality as `serve()` but includes a few
-additional enhancements, which make developing FastHTML applications a
-little easier.
+Replace the default `serve()` function with `serve_dev()`. This performs
+the same functionality as `serve()` but includes a few additional
+enhancements, which make developing FastHTML applications a little
+easier.
 
-Currently
-[`serve_dev()`](https://ExploringML.github.io/fh-dev-utils/serve_dev.html#serve_dev)
-offers three main features.
+Currently `serve_dev()` offers three main features.
 
 1.  TailwindCSS styles dynamic build process
 2.  Jupyter notebook server
 3.  SQLite database browser
 
-Note: If you use
-[`serve_dev()`](https://ExploringML.github.io/fh-dev-utils/serve_dev.html#serve_dev)
-without any options then it performs the exact same function as
-`serve()`.
+Note: If you use `serve_dev()` without any options then it performs the
+exact same function as `serve()`.
 
 ## 1. TailwindCSS Dynamic Build
 
@@ -154,8 +143,7 @@ this format instead:
 
 If your Tailwind CSS file is named something other then `app.css` or is
 in a different location then you can use the `tw_src` parameter in
-[`serve_dev()`](https://ExploringML.github.io/fh-dev-utils/serve_dev.html#serve_dev)
-to change the name/path as required.
+`serve_dev()` to change the name/path as required.
 
 The last thing to do is add the generated Tailwind CSS file to the
 header of your FastHTML site.
@@ -171,9 +159,7 @@ app,rt,todos,ToDo = fast_app(
 ```
 
 This will add the necessary styles and will also bypass the browser CSS
-cache via the `fh-dev-utils`
-[`cache_buster()`](https://ExploringML.github.io/fh-dev-utils/serve_dev.html#cache_buster)
-function.
+cache via the `fh-dev-utils` `cache_buster()` function.
 
 ### Tailwind Intellisense
 
@@ -208,12 +194,12 @@ the existing ones:
 
 Once this is set up then you get full intellisense support.
 
-<img src="assets/tw-intellisense1.png" width="750" />
+<img src="https://raw.githubusercontent.com/ExploringML/fh-dev-utils/main/nbs/assets/tw-intellisense1.png" width="750" />
 
 Plus, all colors are highlighted inline too, and you can hover over the
 Tailwind class to see what the computed CSS will be when rendered!
 
-<img src="assets/tw-intellisense2.png" width="750" />
+<img src="https://raw.githubusercontent.com/ExploringML/fh-dev-utils/main/nbs/assets/tw-intellisense2.png" width="750" />
 
 ### Troubleshooting
 
@@ -232,10 +218,8 @@ to enable quick exploration or research when developing you app. Use it
 to test things out or as a scratch pad to try out ideas. You can then
 transfer any code you want to incorporate into the FastHTML app.
 
-The
-[`serve_dev()`](https://ExploringML.github.io/fh-dev-utils/serve_dev.html#serve_dev)
-function makes this super-easy. Simply set the `jupyter` argument to
-`True`:
+The `serve_dev()` function makes this super-easy. Simply set the
+`jupyter` argument to `True`:
 
 ``` python
 serve_dev(jupyter=True)
@@ -261,13 +245,13 @@ INFO:     Application startup complete.
 This will give you access to a full Jupyter Lab server that runs along
 side your FastHTML app.
 
-<img src="assets/jupyter-1.png" width="750" />
+<img src="https://raw.githubusercontent.com/ExploringML/fh-dev-utils/main/nbs/assets/jupyter-1.png" width="750" />
 
 A particularly useful way to use a notebook to complement your FastHTML
 app is to view the schema for an SQLite database (only relevant if your
 app includes a database).
 
-<img src="assets/jupyter-2.png" width="750" />
+<img src="https://raw.githubusercontent.com/ExploringML/fh-dev-utils/main/nbs/assets/jupyter-2.png" width="750" />
 
 Note: The `fastlite` `diagram()` function requires
 [`graphviz`](https://graphviz.org/) to be installed.
@@ -308,7 +292,7 @@ INFO:     Application startup complete.
 This will give you access to a full sqlite-web database server that runs
 along side your FastHTML app.
 
-<img src="assets/sqlite-web-1.png" width="750" />
+<img src="https://raw.githubusercontent.com/ExploringML/fh-dev-utils/main/nbs/assets/sqlite-web-1.png" width="750" />
 
 ## Enabling All Options
 
@@ -343,10 +327,9 @@ reload and auto-intellisense works properly.
 
 In both examples a `DEV_MODE` variable is used to easily switch between
 development and production. When `DEV_MODE` is enabled it uses CSS
-browser cache busting, and uses the
-[`serve_dev()`](https://ExploringML.github.io/fh-dev-utils/serve_dev.html#serve_dev)
-function. Otherwise, in production, the CSS is cached and the FastHTML
-`serve()` function is used.
+browser cache busting, and uses the `serve_dev()` function. Otherwise,
+in production, the CSS is cached and the FastHTML `serve()` function is
+used.
 
 This first one is very simple and doesn’t include a database:
 
@@ -426,8 +409,6 @@ else: serve()
 ```
 
 This is a very minimal database app just as an illustrative example of
-using
-[`serve_dev()`](https://ExploringML.github.io/fh-dev-utils/serve_dev.html#serve_dev)
-to spin up a database browser. You can only add and view todo items.
-However, using `sqlite-web` you can browse the database and
-add/edit/remove items very easily!
+using `serve_dev()` to spin up a database browser. You can only add and
+view todo items. However, using `sqlite-web` you can browse the database
+and add/edit/remove items very easily!
