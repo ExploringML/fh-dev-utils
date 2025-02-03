@@ -3,7 +3,7 @@ project:
 
 website:
   title: "fh-dev-utils"
-  site-url: "https://ExploringML.github.io/fh-dev-utils"
+  site-url: "https://dgwyer.github.io/fh-dev-utils"
   description: "Utility functions to help with the development of FastHTML applications."
   repo-branch: main
-  repo-url: "https://github.com/ExploringML/fh-dev-utils"
+  repo-url: "https://github.com/dgwyer/fh-dev-utils"
