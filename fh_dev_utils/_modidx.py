@@ -2,8 +2,8 @@
 
 d = { 'settings': { 'branch': 'main',
                 'doc_baseurl': '/fh-dev-utils',
-                'doc_host': 'https://dgwyer.github.io',
-                'git_url': 'https://github.com/dgwyer/fh-dev-utils',
+                'doc_host': 'https://ExploringML.github.io',
+                'git_url': 'https://github.com/ExploringML/fh-dev-utils',
                 'lib_path': 'fh_dev_utils'},
   'syms': { 'fh_dev_utils.serve': { 'fh_dev_utils.serve.cache_buster': ('serve_dev.html#cache_buster', 'fh_dev_utils/serve.py'),
                                     'fh_dev_utils.serve.serve_dev': ('serve_dev.html#serve_dev', 'fh_dev_utils/serve.py')}}}
