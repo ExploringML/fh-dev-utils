@@ -361,15 +361,17 @@ open in the browser.
 ## Example FastHTML Apps
 
 Here are a couple of examples of full minimal FastHTML apps that
-implement the `fh-dev-utils` package to make development easier.
-Remember to include a config file if using TailwindCSS so that live
-reload and auto-intellisense works properly.
+implement the `fh-dev-utils` package to make development easier. This
+section is mainly to show the code. If you want to run the examples apps
+then take a look at the
+[`fh-dev-utils-examples`](https://github.com/ExploringML/fh-dev-utils-examples)
+repo for installation details.
 
-In both examples a `DEV_MODE` variable is used to easily switch between
-development and production. When `DEV_MODE` is enabled it uses CSS
-browser cache busting, and uses the `serve_dev()` function. Otherwise,
-in production, the CSS is cached and the FastHTML `serve()` function is
-used.
+In both the code examples below a `DEV_MODE` variable is used to easily
+switch between development and production. When `DEV_MODE` is enabled it
+uses CSS browser cache busting, and uses the `serve_dev()` function.
+Otherwise, in production, the CSS is cached and the FastHTML `serve()`
+function is used.
 
 This first one is very simple and doesn’t include a database:
 
@@ -383,7 +385,7 @@ app,rt = fast_app(
     pico=False,
     live=True,
     hdrs=(
-        Link(rel="stylesheet", href=f"/public/app.css{cache_buster() if DEV_MODE else ""}", type="text/css"),
+        Link(rel="stylesheet", href=f"/public/app.css{cache_buster() if DEV_MODE else ''}", type="text/css"),
     )
 )
 
