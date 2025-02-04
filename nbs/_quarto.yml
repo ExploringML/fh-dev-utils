@@ -16,6 +16,9 @@ website:
   navbar:
     background: primary
     search: true
+    right:
+      - icon: github
+        href: https://github.com/ExploringML/fh-dev-utils
   sidebar:
     style: floating
 
