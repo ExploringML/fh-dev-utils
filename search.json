@@ -1,0 +1,132 @@
+[
+  {
+    "objectID": "serve_dev.html",
+    "href": "serve_dev.html",
+    "title": "API",
+    "section": "",
+    "text": "The serve_dev() function is a wrapper around the FastHTML serve() function, adding utilities to enhance the development experience.\n\nsource\n\n\n\n serve_dev (app='app', host='0.0.0.0', port=None, reload=True,\n            reload_includes=None, reload_excludes=None, sqlite_port=8035,\n            db=False, db_path='data/app.db', jupyter=False,\n            jupyter_port=8036, tw=False, tw_src='./app.css',\n            tw_dist='./public/app.css')\n\nUtility function to start FastHTML, TailwindCSS, Jupyter Lab, and SQLite in development mode\n\n\n\n\n\n\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\napp\nstr\napp\nFastHTML (Starlette) class instance\n\n\nhost\nstr\n0.0.0.0\nUvicorn host\n\n\nport\nNoneType\nNone\nUvicorn port\n\n\nreload\nbool\nTrue\nUvicorn reload status\n\n\nreload_includes\nNoneType\nNone\nFiles to watch to reload Uvicorn\n\n\nreload_excludes\nNoneType\nNone\nFiles to exclude from watching to reload Uvicorn\n\n\nsqlite_port\nint\n8035\nsqlite-web port\n\n\ndb\nbool\nFalse\nEnable SQLIte browser\n\n\ndb_path\nstr\ndata/app.db\nSQLite database path\n\n\njupyter\nbool\nFalse\nEnable Jupyter Lab\n\n\njupyter_port\nint\n8036\nJupyter Lab port\n\n\ntw\nbool\nFalse\nEnable TailwindCSS\n\n\ntw_src\nstr\n./app.css\nTailwindCSS source file\n\n\ntw_dist\nstr\n./public/app.css\nTailwindCSS output file",
+    "crumbs": [
+      "API"
+    ]
+  },
+  {
+    "objectID": "serve_dev.html#serve_dev",
+    "href": "serve_dev.html#serve_dev",
+    "title": "API",
+    "section": "",
+    "text": "The serve_dev() function is a wrapper around the FastHTML serve() function, adding utilities to enhance the development experience.\n\nsource\n\n\n\n serve_dev (app='app', host='0.0.0.0', port=None, reload=True,\n            reload_includes=None, reload_excludes=None, sqlite_port=8035,\n            db=False, db_path='data/app.db', jupyter=False,\n            jupyter_port=8036, tw=False, tw_src='./app.css',\n            tw_dist='./public/app.css')\n\nUtility function to start FastHTML, TailwindCSS, Jupyter Lab, and SQLite in development mode\n\n\n\n\n\n\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\napp\nstr\napp\nFastHTML (Starlette) class instance\n\n\nhost\nstr\n0.0.0.0\nUvicorn host\n\n\nport\nNoneType\nNone\nUvicorn port\n\n\nreload\nbool\nTrue\nUvicorn reload status\n\n\nreload_includes\nNoneType\nNone\nFiles to watch to reload Uvicorn\n\n\nreload_excludes\nNoneType\nNone\nFiles to exclude from watching to reload Uvicorn\n\n\nsqlite_port\nint\n8035\nsqlite-web port\n\n\ndb\nbool\nFalse\nEnable SQLIte browser\n\n\ndb_path\nstr\ndata/app.db\nSQLite database path\n\n\njupyter\nbool\nFalse\nEnable Jupyter Lab\n\n\njupyter_port\nint\n8036\nJupyter Lab port\n\n\ntw\nbool\nFalse\nEnable TailwindCSS\n\n\ntw_src\nstr\n./app.css\nTailwindCSS source file\n\n\ntw_dist\nstr\n./public/app.css\nTailwindCSS output file",
+    "crumbs": [
+      "API"
+    ]
+  },
+  {
+    "objectID": "serve_dev.html#cache_buster",
+    "href": "serve_dev.html#cache_buster",
+    "title": "API",
+    "section": "cache_buster()",
+    "text": "cache_buster()\nIt can be annoying sometimes when FastHTML live reload is enabled and you’re quickly iterating on CSS changes and the styles sometimes get cached between page loads. When this happens you have to manually clear the browser cache and reload the page.\nThe cache_buster() function adds a unique timestamp string to the CSS file added to the site header which is different every page load, so this should eliminate browser caching of CSS leading to a smoother development workflow.\n\nsource\n\ncache_buster\n\n cache_buster ()\n\nHelps to avoid browser caching of dynamically generated CSS during development",
+    "crumbs": [
+      "API"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "FastHTML Developer Utils",
+    "section": "",
+    "text": "Here’s how to use TailwindCSS v4 to style your FastHTML app, with a live-reload build step. For other fh-dev-utils features please refer to the following sections.\nInstall the fh-dev-utils package in your Python environment.\npip install fh-dev-utils\nClone the fh-dev-utils-examples repo and navigate to one of the example folders:\ngit clone https://github.com/ExploringML/fh-dev-utils-examples.git\ncd fh-dev-utils-examples/tailwind-basic\nRun the FastHTML app inside an example folder and view it in the browser with the url http://localhost:5001.\npython main.py\n\nCheck out the other FastHTML examples in the fh-dev-utils-example repo.",
+    "crumbs": [
+      "FastHTML Developer Utils"
+    ]
+  },
+  {
+    "objectID": "index.html#quick-start",
+    "href": "index.html#quick-start",
+    "title": "FastHTML Developer Utils",
+    "section": "",
+    "text": "Here’s how to use TailwindCSS v4 to style your FastHTML app, with a live-reload build step. For other fh-dev-utils features please refer to the following sections.\nInstall the fh-dev-utils package in your Python environment.\npip install fh-dev-utils\nClone the fh-dev-utils-examples repo and navigate to one of the example folders:\ngit clone https://github.com/ExploringML/fh-dev-utils-examples.git\ncd fh-dev-utils-examples/tailwind-basic\nRun the FastHTML app inside an example folder and view it in the browser with the url http://localhost:5001.\npython main.py\n\nCheck out the other FastHTML examples in the fh-dev-utils-example repo.",
+    "crumbs": [
+      "FastHTML Developer Utils"
+    ]
+  },
+  {
+    "objectID": "index.html#why-fh-dev-utils",
+    "href": "index.html#why-fh-dev-utils",
+    "title": "FastHTML Developer Utils",
+    "section": "Why fh-dev-utils?",
+    "text": "Why fh-dev-utils?\nHere’s a brief outline of the benefits of using fh-dev-utils.\n\nSuper-easy to build Tailwind styles dynamically.\nCompatible with TailwindCSS v4.\nCache buster to always load latest styles during development.\nRun a Jupyter notebook server alongside your FastHTML app.\nDatabase browser to easily view/manage your apps db tables and records.\nTailwindCSS intellisense for a great developer experience!\n\nTailwind officially advises to use a build step to compile styles rather than adding the static CSS file via a CDN. A huge benefit of a build step is enabling intellisense support.\nUsing intellisense to view inline color information at a glance, see a list of all available Tailwind classes, and hover over any Tailwind class to view compiled CSS, is a game-changer!\nA complete list of the benefits of compiling TailwindCSS styles can be found here.",
+    "crumbs": [
+      "FastHTML Developer Utils"
+    ]
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "FastHTML Developer Utils",
+    "section": "Introduction",
+    "text": "Introduction\nThe fh-dev-utils package helps during the devlopment of FastHTML applications by adding support for live TailwindCSS build, a Jupyter notebook server, and an SQLite viewer/manager via the serve_dev() function.\nThere is also a cache_buster() function available to help prevent caching of CSS styles during development.\nSee here for the full definition of serve_dev() and cache_buster() plus all available parameters.",
+    "crumbs": [
+      "FastHTML Developer Utils"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "FastHTML Developer Utils",
+    "section": "Usage",
+    "text": "Usage\nInstall the fh-dev-utils package from PyPi.\n$ pip install fh-dev-utils\nThen import the fh_dev_utils package inside your FastHTML application.\nmain.py\nfrom fasthtml.common import *\nfrom fh_dev_utils.serve import *\n\napp,rt = fast_app(live=True)\n\n@rt('/')\ndef get(): return Div(P('Hello World!'))\n\n#serve()\nserve_dev()\nReplace the default serve() function with serve_dev(). This performs the same functionality as serve() but includes a few additional enhancements, which make developing FastHTML applications a little easier.\nCurrently serve_dev() offers three main features.\n\nTailwindCSS styles dynamic build process\nJupyter notebook server\nSQLite database browser\n\nNote: If you use serve_dev() without any options then it performs the exact same function as serve().",
+    "crumbs": [
+      "FastHTML Developer Utils"
+    ]
+  },
+  {
+    "objectID": "index.html#tailwindcss-dynamic-build",
+    "href": "index.html#tailwindcss-dynamic-build",
+    "title": "FastHTML Developer Utils",
+    "section": "1. TailwindCSS Dynamic Build",
+    "text": "1. TailwindCSS Dynamic Build\nUses the TailwindCSS CLI to dynamically build styles as you edit your apps source code.\nBenefits include:\n\nSmaller CSS files size (only build what you have defined)\nRecommended best practice from the authors of TailwindCSS:\n\n\nThe [Play] CDN is designed for development purposes only, and is not intended for production.\n\n\nUse dynamic selectors such as mb-[34px]\nTailwindCSS intellisense support\nCustom configuration (e.g. plugins, and custom themes)\n\nserve_dev(tw=True)\nWhen you start a FastHTML app with the tw parameter enabled you’ll see an additional link to open Jupyter Lab. By default the source TailwindCSS file is assumed to be located in ./app.css and the output is saved to ./public/app.css. Both these paths can be configured by the tw_src and tw_dist parameters respectively.\n$ python main.py\nWatching for Tailwind class changes...\nLink: http://localhost:5001\nINFO:     Will watch for changes in these directories: ['/home/david/fh-dev-utils-test']\nINFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)\nINFO:     Started reloader process [1951725] using WatchFiles\nINFO:     Started server process [1951759]\nINFO:     Waiting for application startup.\nINFO:     Application startup complete.\n\nTailwindCSS Setup\nThe serve_dev(tw=True) function runs the TailwindCSS CLI to watch for class name changes but you need to setup your FastHTML to be Tailwind ‘compatible’. This means adding a Tailwind source CSS file and a config file.\nIn the root of your FastTML project add an app.css file:\n@import \"tailwindcss\";\nThis is for TailwindCSS v4. If you’re using an older version then use this format instead:\n@tailwind base;\n@tailwind components;\n@tailwind utilities;\nIf your Tailwind CSS file is named something other then app.css or is in a different location then you can use the tw_src parameter in serve_dev() to change the name/path as required.\nThe last thing to do is add the generated Tailwind CSS file to the header of your FastHTML site.\napp,rt,todos,ToDo = fast_app(\n    pico=False,\n    live=True,\n    hdrs=(\n        Link(rel=\"stylesheet\", href=f\"/public/app.css{cache_buster() if DEV_MODE else \"\"}\", type=\"text/css\"),\n    ),\n)\nThis will add the necessary styles and will also bypass the browser CSS cache via the fh-dev-utils cache_buster() function.\n\n\nTailwind Intellisense\nOne of the advantages to building TailwindCSS styles dynamically is that it enables support for auto-completion (intellisense) of Tailwind classes as you type.\nTo get this working you need to be using VS Code and install the Tailwind CSS IntelliSense extension.\nYou’ll also need to edit the TailwindCSS VS Code settings so that intellisense is auto-triggered as you edit your FastHTML app source code. These extra rules are needed so that Tailwind CSS classes can be detected in any part of your Python code.\nOpen the JSON user settings in VS Code and add the following settings to the existing ones:\n {\n  \"tailwindCSS.includeLanguages\": {\"python\": \"html\"},\n  \"tailwindCSS.experimental.classRegex\": [\"['\\\"]([^'\\\"]*)['\\\"]\"],\n}\nOnce this is set up then you get full intellisense support.\n\nPlus, all colors are highlighted inline too, and you can hover over the Tailwind class to see what the computed CSS will be when rendered!\n\n\n\nTailwind Class Reordering\nThere is a recommended order for Tailwind classes inside a string. The official solution is to use a Prettier plugin but you can also sort classes in VS Code if you have the Tailwind CSS Intellisense plugin installed.\nSimply select a Tailwind class string that contains multiple classes and press CTRL+Shift+P (Windows) to open the command pallete. Start typing ‘Tailwind…’ until you see the ‘Tailwind CSS: Sort Selection’ command.\nSelect it and press Enter, or click on it. This will sort the selected Tailwind classes into the recommended order.\n\n\nTroubleshooting\nIf you don’t see a little color swatch next to the Tailwind color classes then intellisense isn’t working. This is usually because the TailwindCSS CLI is not running, or you don’t have a tailwind.config.js added to the root of your FastHTML app.\nAlso, if you are using Linux under Windows (WSL) then make sure the Tailwind CSS Intellisense VS Code extension is enabled for WSL.",
+    "crumbs": [
+      "FastHTML Developer Utils"
+    ]
+  },
+  {
+    "objectID": "index.html#jupyter-notebook-server",
+    "href": "index.html#jupyter-notebook-server",
+    "title": "FastHTML Developer Utils",
+    "section": "2. Jupyter Notebook Server",
+    "text": "2. Jupyter Notebook Server\nIt is often really useful to add one or more notebooks to your FastHTML to enable quick exploration or research when developing you app. Use it to test things out or as a scratch pad to try out ideas. You can then transfer any code you want to incorporate into the FastHTML app.\nThe serve_dev() function makes this super-easy. Simply set the jupyter argument to True:\nserve_dev(jupyter=True)\nWhen you start a FastHTML app with the jupyter parameter enabled you’ll see an additional link to open Jupyter Lab. By default port 8036 will be used for the Jupyter lab server but this can be changed via the jupyter_port parameter.\n$ python main.py\nJupyter Lab link: http://localhost:8036/lab\nLink: http://localhost:5001\nINFO:     Will watch for changes in these directories: ['/home/david/fh-dev-utils-test']\nINFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)\nINFO:     Started reloader process [1951725] using WatchFiles\nINFO:     Started server process [1951759]\nINFO:     Waiting for application startup.\nINFO:     Application startup complete.\nThis will give you access to a full Jupyter Lab server that runs along side your FastHTML app.\n\nA particularly useful way to use a notebook to complement your FastHTML app is to view the schema for an SQLite database (only relevant if your app includes a database).\n\nNote: The fastlite diagram() function requires graphviz to be installed.",
+    "crumbs": [
+      "FastHTML Developer Utils"
+    ]
+  },
+  {
+    "objectID": "index.html#sqlite-database-browser",
+    "href": "index.html#sqlite-database-browser",
+    "title": "FastHTML Developer Utils",
+    "section": "3. SQLite Database Browser",
+    "text": "3. SQLite Database Browser\nWhen working with an SQLite database in your FastHTML app it is often useful to be able to easily view/edit database data. You can also do this manually via a Jupyter Lab notebook too but it is very convenient to have a dedicated app to be able to interect with your database.\nWe have included support for the sqlite-web browser which is written in Python.\nserve_dev(db=True)\nWhen you start a FastHTML app with the db parameter enabled you’ll see an additional link to open sqlite-web database browser. By default port 8035 will be used for the SQLite browser but this can be changed via the sqlite_port parameter. The database file can be configured via db_path. By default it is set to ./data/app.db.\n$ python main.py\nSQLite link: http://localhost:8035\nLink: http://localhost:5001\nINFO:     Will watch for changes in these directories: ['/home/david/fh-dev-utils-test']\nINFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)\nINFO:     Started reloader process [1988346] using WatchFiles\nINFO:     Started server process [1988418]\nINFO:     Waiting for application startup.\nINFO:     Application startup complete.\nThis will give you access to a full sqlite-web database server that runs along side your FastHTML app.",
+    "crumbs": [
+      "FastHTML Developer Utils"
+    ]
+  },
+  {
+    "objectID": "index.html#enabling-all-options",
+    "href": "index.html#enabling-all-options",
+    "title": "FastHTML Developer Utils",
+    "section": "Enabling All Options",
+    "text": "Enabling All Options\nIf you enable TailwindCSS file watching, Jupyter Lab server, and sqlite-web database browser altogether then the console output will look like this when you first start a FastHTML app.\n$ python main.py\nWatching for Tailwind class changes...\nSQLite link: http://localhost:8035\nJupyter Lab link: http://localhost:8036/lab\nLink: http://localhost:5001\nINFO:     Will watch for changes in these directories: ['/home/david/fh-dev-utils-test']\nINFO:     Uvicorn running on http://0.0.0.0:5001 (Press CTRL+C to quit)\nINFO:     Started reloader process [1988346] using WatchFiles\nINFO:     Started server process [1988418]\nINFO:     Waiting for application startup.\nINFO:     Application startup complete.\nAll links are placed next to each other for convenience making it easy to select which server (FastHTML, Jupyter, or sqlite-web) you want to open in the browser.",
+    "crumbs": [
+      "FastHTML Developer Utils"
+    ]
+  },
+  {
+    "objectID": "index.html#example-fasthtml-apps",
+    "href": "index.html#example-fasthtml-apps",
+    "title": "FastHTML Developer Utils",
+    "section": "Example FastHTML Apps",
+    "text": "Example FastHTML Apps\nHere are a couple of examples of full minimal FastHTML apps that implement the fh-dev-utils package to make development easier. This section is mainly to show the code. If you want to run the examples apps then take a look at the fh-dev-utils-examples repo for installation details.\nIn both the code examples below a DEV_MODE variable is used to easily switch between development and production. When DEV_MODE is enabled it uses CSS browser cache busting, and uses the serve_dev() function. Otherwise, in production, the CSS is cached and the FastHTML serve() function is used.\nThis first one is very simple and doesn’t include a database:\nfrom fasthtml.common import *\nfrom fh_dev_utils.serve import *\n\nDEV_MODE=True\n\napp,rt = fast_app(\n    pico=False,\n    live=True,\n    hdrs=(\n        Link(rel=\"stylesheet\", href=f\"/public/app.css{cache_buster() if DEV_MODE else ''}\", type=\"text/css\"),\n    )\n)\n\n@rt('/')\ndef get():\n    return Div(\n        P('Hello World!', cls=\"text-[#bada55] bg-gradient-to-r from-blue-400 to-purple-600 p-4 rounded-lg shadow-lg\"),\n        P('Blue Background', cls=\"bg-blue-500 text-white p-2 round\"),\n        P('Gradient Text', cls=\"bg-gradient-to-r from-pink-500 to-yellow-500 text-transparent bg-clip-text p-6\"),\n        cls=\"m-[41px] space-y-4\"\n    )\n\nif DEV_MODE: serve_dev(tw=True, jupyter=True)\nelse: serve()\nAnd here’s one that includes an SQLite database.\nfrom fasthtml.common import *\nfrom fh_dev_utils.serve import *\n\nDEV_MODE=True\n\napp,rt,todos,ToDo = fast_app('data/todos.db', id=int, title=str, pk='id', pico=True, live=True)\n\nif not todos(): # Seed database if empty\n    todos.insert_all([\n        {\"title\": \"Buy groceries\"},\n        {\"title\": \"Finish blog post\"},\n        {\"title\": \"Reply to emails\"},\n        {\"title\": \"Plan weekend trip\"},\n        {\"title\": \"Read AI research paper\"}\n    ]\n)\n\ndef TodoRow(todo): return Li(todo.title, href=f'/todos/{todo.id}', id=f'todo-{todo.id}')\n\ndef home():\n    add = Form(\n            Group(\n                Input(name=\"title\", placeholder=\"New Todo\"),\n                Button(\"Add\")\n            ), action=\"/\", method='post'\n        )\n    card = Card(\n                Ul(*map(TodoRow, todos()), id='todo-list', style=\"padding:20px;\"),\n                header=add,\n                footer=Div(id='current-todo')\n            )\n    return Titled('Todo list', card)\n\n@rt(\"/\")\ndef get(): return home()\n\n@rt(\"/\")\ndef post(todo:ToDo):\n    todos.insert(todo)\n    return home()\n\nif DEV_MODE: serve_dev(db=True, db_path='data/todos.db')\nelse: serve()\nThis is a very minimal database app just as an illustrative example of using serve_dev() to spin up a database browser. You can only add and view todo items. However, using sqlite-web you can browse the database and add/edit/remove items very easily!",
+    "crumbs": [
+      "FastHTML Developer Utils"
+    ]
+  }
+]
