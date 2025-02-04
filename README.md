@@ -20,7 +20,7 @@ example folders:
 
 ``` sh
 git clone https://github.com/ExploringML/fh-dev-utils-examples.git
-cd tailwind-basic
+cd fh-dev-utils-examples/tailwind-basic
 ```
 
 Run the FastHTML app inside an example folder and view it in the browser
